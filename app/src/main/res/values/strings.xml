@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Lexio</string>
+
+    <string name="all_decks">Все</string>
+
+    <string name="today_plan">План на сегодня</string>
+    <string name="start_lesson">Начать занятие →</string>
+    <string name="recent_deck">Недавняя колода</string>
+
+    <string name="main_screen_subtitle">Продолжим обучение?</string>
+
 </resources>
