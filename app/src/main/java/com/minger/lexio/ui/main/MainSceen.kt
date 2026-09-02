@@ -33,16 +33,17 @@ import com.minger.lexio.ui.decks.DeckCard
 @Composable
 fun MainScreen(
     modifier: Modifier = Modifier,
-    userName: String,
-    onAllDecksClick: () -> Unit,
+    userName: String = "Даниил",
+    onAllDecksClick: () -> Unit = {},
+    onDeckClick: () -> Unit = {},
 ) {
     Box(
-        modifier = Modifier
+        modifier = modifier
             .fillMaxSize()
             .padding(8.dp),
     ) {
         Column(
-            modifier = modifier.padding(8.dp),
+            modifier = Modifier.padding(8.dp),
             verticalArrangement = Arrangement.spacedBy(16.dp),
         ) {
             Row(
@@ -51,7 +52,7 @@ fun MainScreen(
             ) {
                 Column {
                     Text(
-                        text = "Доброе утро, $userName",
+                        text = stringResource(R.string.good_morning, userName),
                         fontSize = 18.sp,
                         color = MaterialTheme.colorScheme.onBackground,
                         fontWeight = FontWeight.Bold,
@@ -107,11 +108,12 @@ fun MainScreen(
             }
 
             DeckCard(
+                onDeckClick = onDeckClick,
                 emojiIcon = "\uD83C\uDDE9\uD83C\uDDF0",
                 deckName = "Еда",
                 wordsValue = "40 слов",
                 learningPercent = "42% изучено",
-            ) {}
+            )
         }
     }
 }

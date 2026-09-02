@@ -9,4 +9,10 @@
 
     <string name="main_screen_subtitle">Продолжим обучение?</string>
 
+    <string name="good_morning">Доброе утро, %s</string>
+
+    <string name="main">Главная</string>
+    <string name="decks">Колоды</string>
+    <string name="profile">Профиль</string>
+
 </resources>
