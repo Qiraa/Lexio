@@ -24,6 +24,7 @@ import com.minger.lexio.R
 import com.minger.lexio.ui.main.MainScreen
 import com.minger.lexio.ui.decks.DecksScreen
 import com.minger.lexio.ui.profile.ProfileScreen
+import com.minger.lexio.ui.newDeck.NewDeckScreen
 
 @Composable
 fun NavGraph(navController: NavController = rememberNavController()) {
@@ -95,8 +96,13 @@ fun NavGraph(navController: NavController = rememberNavController()) {
             modifier = Modifier.padding(paddingValues)
         ) {
             composable(Screen.Main.route) { MainScreen() }
-            composable(Screen.Decks.route) { DecksScreen() }
+            composable(Screen.Decks.route) {
+                DecksScreen(
+                    onAddNewDeck = { navController.navigate(Screen.NewDeck.route) }
+                )
+            }
             composable(Screen.Profile.route) { ProfileScreen() }
+            composable(Screen.NewDeck.route) { NewDeckScreen() }
         }
     }
 }

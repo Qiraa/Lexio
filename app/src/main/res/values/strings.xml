@@ -15,4 +15,59 @@
     <string name="decks">Колоды</string>
     <string name="profile">Профиль</string>
 
+    <plurals name="word_cards">
+        <item quantity="zero">%d карточек</item>
+        <item quantity="one">%d карточка</item>
+        <item quantity="two">%d карточки</item>
+        <item quantity="few">%d карточки</item>
+        <item quantity="many">%d карточек</item>
+        <item quantity="other">%d карточек</item>
+    </plurals>
+
+    <plurals name="new_words_card">
+        <item quantity="one">%d новая • %d на повторение</item>
+        <item quantity="other">%d новых • %d на повторение</item>
+    </plurals>
+
+    <plurals name="words_in_deck">
+        <item quantity="zero">%d слов • %d%% изучено</item>
+        <item quantity="one">%d слово • %d%% изучено</item>
+        <item quantity="two">%d слова • %d%% изучено</item>
+        <item quantity="few">%d слова • %d%% изучено</item>
+        <item quantity="many">%d слов • %d%% изучено</item>
+        <item quantity="other">%d слов • %d%% изучено</item>
+    </plurals>
+
+    <plurals name="words_value">
+        <item quantity="zero">%d слов </item>
+        <item quantity="one">%d слово</item>
+        <item quantity="two">%d слова</item>
+        <item quantity="few">%d слова</item>
+        <item quantity="many">%d слов</item>
+        <item quantity="other">%d слов</item>
+    </plurals>
+
+    <string name="user">пользователь</string>
+    <string name="error_screen_title">Что-то пошло не так</string>
+
+    <string name="decks_screen_title">Мои колоды</string>
+    <string name="add_new_deck">Добавить новую колоду</string>
+    <string name="search">Найти колоду</string>
+    <string name="clear_icon_content_description">Очистить историю</string>
+
+    <string name="learning_percent">%d%%</string>
+    <string name="everything_repeated"> все повторено</string>
+    <string name="words_today">%d сегодня</string>
+    
+    <string name="canсel">Отмена</string>
+    <string name="new_deck">Новая колода</string>
+    <string name="save">Сохранить</string>
+    <string name="new_card">Новая карточка</string>
+    <string name="finish">Готово</string>
+    <string name="choose_the_cover">Выбрать обложку</string>
+    <string name="name">Название</string>
+    <string name="description">Описание</string>
+    <string name="learning_language">Изучаемый язык</string>
+    <string name="translation_language">Язык перевода</string>
+    <string name="new_deck_screen_subtitle">Колоду можно изменить в любой момент</string>
 </resources>
