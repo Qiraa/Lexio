@@ -14,6 +14,7 @@
     <string name="main">Главная</string>
     <string name="decks">Колоды</string>
     <string name="profile">Профиль</string>
+    <string name="deck">Колода</string>
 
     <plurals name="word_cards">
         <item quantity="zero">%d карточек</item>
@@ -22,6 +23,17 @@
         <item quantity="few">%d карточки</item>
         <item quantity="many">%d карточек</item>
         <item quantity="other">%d карточек</item>
+    </plurals>
+
+    <string name="cards">Карточки</string>
+
+    <plurals name="deck_info">
+        <item quantity="zero">%d%% изучено • %d карточек на сегодня</item>
+        <item quantity="one">%d%% изучено • %d карточка на сегодня</item>
+        <item quantity="two">%d%% изучено • %d карточки на сегодня</item>
+        <item quantity="few">%d%% изучено • %d карточки на сегодня</item>
+        <item quantity="many">%d%% изучено • %d карточек на сегодня</item>
+        <item quantity="other">%d%% изучено • %d карточек на сегодня</item>
     </plurals>
 
     <plurals name="new_words_card">
@@ -70,4 +82,23 @@
     <string name="learning_language">Изучаемый язык</string>
     <string name="translation_language">Язык перевода</string>
     <string name="new_deck_screen_subtitle">Колоду можно изменить в любой момент</string>
+    <string name="repeat">Повторить</string>
+
+    <string name="start_learning">Учить</string>
+    <string name="all_cards">Всего</string>
+    <string name="cards_today">Сегодня</string>
+    <string name="difficult_cards">Сложных</string>
+
+    <string name="add_card">Добавить карточку</string>
+    <string name="edit_card">Редактировать</string>
+
+    <string name="word_language">Слово • %s</string>
+    <string name="word_translation">Перевод • %s</string>
+    <string name="example">Пример</string>
+    <string name="enter_word">Ввведите слово</string>
+    <string name="enter_translation">Введите перевод</string>
+    <string name="enter_example">Введите пример</string>
+
+    <string name="front_side">Лицевая сторона</string>
+    <string name="back_side">Обратная сторона</string>
 </resources>

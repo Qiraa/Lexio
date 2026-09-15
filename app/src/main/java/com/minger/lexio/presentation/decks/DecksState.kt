@@ -3,6 +3,7 @@ package com.minger.lexio.presentation.decks
 sealed interface DecksState {
 
     data class Success(
+        val query: String,
         val decks: List<Deck>
     ): DecksState {
         data class Deck(

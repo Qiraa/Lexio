@@ -16,6 +16,7 @@ koin-bom = "4.1.1"
 benchmarkTraceprocessor = "1.4.1"
 emoji2Emojipicker = "1.6.0"
 roomKtx = "2.8.4"
+roomKtxVersion = "2.8.5"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -52,6 +53,7 @@ koin-test-junit4 = { module = "io.insert-koin:koin-test-junit4" }
 androidx-benchmark-traceprocessor = { group = "androidx.benchmark", name = "benchmark-traceprocessor", version.ref = "benchmarkTraceprocessor" }
 androidx-emoji2-emojipicker = { group = "androidx.emoji2", name = "emoji2-emojipicker", version.ref = "emoji2Emojipicker" }
 androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomKtx" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomKtxVersion" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

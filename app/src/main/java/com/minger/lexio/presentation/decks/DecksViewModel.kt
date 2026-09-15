@@ -2,9 +2,11 @@ package com.minger.lexio.presentation.decks
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import androidx.room.util.query
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 
 class DecksViewModel : ViewModel() {
@@ -33,16 +35,18 @@ class DecksViewModel : ViewModel() {
                     wordToday = 50,
                     learningPercent = 50,
                 )
-            )
+            ),
+            query = ""
         )
     )
     val state: StateFlow<DecksState> = mutableState.asStateFlow()
 
-    private val currentSearchQuery = MutableStateFlow("")
-    val searchQuery: StateFlow<String> = currentSearchQuery.asStateFlow()
-
     fun onSearchQueryChange(query: String) {
-        currentSearchQuery.value = query
+        mutableState.update { currentState ->
+            if (currentState is DecksState.Success) {
+                currentState.copy(query = query)
+            } else currentState
+        }
         viewModelScope.launch {
 
         }

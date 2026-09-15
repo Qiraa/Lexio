@@ -56,8 +56,8 @@ fun DecksScreen(
         is DecksState.Success -> SuccessContent(
             modifier = modifier,
             addNewDeck = onAddNewDeck,
-            query = "",
-            onQueryChange = {},
+            query = currentState.query,
+            onQueryChange = viewModel::onSearchQueryChange,
             selectedTab = selectedTab,
             onTabSelected = { selectedTab = it },
             decks = currentState.decks.map {

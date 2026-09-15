@@ -1,5 +1,7 @@
 package com.minger.lexio.di
 
+import com.minger.lexio.presentation.card.NewCardViewModel
+import com.minger.lexio.presentation.deck.DeckViewModel
 import com.minger.lexio.presentation.decks.DecksViewModel
 import com.minger.lexio.presentation.main.MainViewModel
 import com.minger.lexio.presentation.newDeck.NewDeckViewModel
@@ -15,5 +17,11 @@ val appModule = module {
     }
     viewModel {
         NewDeckViewModel()
+    }
+     viewModel {
+         DeckViewModel()
+     }
+    viewModel {
+        NewCardViewModel()
     }
 }

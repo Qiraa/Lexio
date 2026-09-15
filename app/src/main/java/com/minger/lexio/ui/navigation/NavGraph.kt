@@ -21,6 +21,8 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.minger.lexio.R
+import com.minger.lexio.ui.card.NewCardScreen
+import com.minger.lexio.ui.deck.DeckScreen
 import com.minger.lexio.ui.main.MainScreen
 import com.minger.lexio.ui.decks.DecksScreen
 import com.minger.lexio.ui.profile.ProfileScreen
@@ -92,7 +94,7 @@ fun NavGraph(navController: NavController = rememberNavController()) {
     ) { paddingValues ->
         NavHost(
             navController = navController as NavHostController,
-            startDestination = Screen.Main.route,
+            startDestination = Screen.Deck.route,
             modifier = Modifier.padding(paddingValues)
         ) {
             composable(Screen.Main.route) { MainScreen() }
@@ -103,6 +105,8 @@ fun NavGraph(navController: NavController = rememberNavController()) {
             }
             composable(Screen.Profile.route) { ProfileScreen() }
             composable(Screen.NewDeck.route) { NewDeckScreen() }
+            composable(Screen.Deck.route) { DeckScreen() }
+            composable(Screen.NewCard.route) { NewCardScreen() }
         }
     }
 }
