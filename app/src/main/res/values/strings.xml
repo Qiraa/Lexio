@@ -14,5 +14,118 @@
     <string name="main">Главная</string>
     <string name="decks">Колоды</string>
     <string name="profile">Профиль</string>
+    <string name="deck">Колода</string>
 
+    <plurals name="word_cards">
+        <item quantity="zero">%d карточек</item>
+        <item quantity="one">%d карточка</item>
+        <item quantity="two">%d карточки</item>
+        <item quantity="few">%d карточки</item>
+        <item quantity="many">%d карточек</item>
+        <item quantity="other">%d карточек</item>
+    </plurals>
+
+    <string name="cards">Карточки</string>
+
+    <plurals name="deck_info">
+        <item quantity="zero">%d%% изучено • %d карточек на сегодня</item>
+        <item quantity="one">%d%% изучено • %d карточка на сегодня</item>
+        <item quantity="two">%d%% изучено • %d карточки на сегодня</item>
+        <item quantity="few">%d%% изучено • %d карточки на сегодня</item>
+        <item quantity="many">%d%% изучено • %d карточек на сегодня</item>
+        <item quantity="other">%d%% изучено • %d карточек на сегодня</item>
+    </plurals>
+
+    <plurals name="new_words_card">
+        <item quantity="one">%d новая • %d на повторение</item>
+        <item quantity="other">%d новых • %d на повторение</item>
+    </plurals>
+
+    <plurals name="words_in_deck">
+        <item quantity="zero">%d слов • %d%% изучено</item>
+        <item quantity="one">%d слово • %d%% изучено</item>
+        <item quantity="two">%d слова • %d%% изучено</item>
+        <item quantity="few">%d слова • %d%% изучено</item>
+        <item quantity="many">%d слов • %d%% изучено</item>
+        <item quantity="other">%d слов • %d%% изучено</item>
+    </plurals>
+
+    <plurals name="words_value">
+        <item quantity="zero">%d слов </item>
+        <item quantity="one">%d слово</item>
+        <item quantity="two">%d слова</item>
+        <item quantity="few">%d слова</item>
+        <item quantity="many">%d слов</item>
+        <item quantity="other">%d слов</item>
+    </plurals>
+
+    <string name="user">пользователь</string>
+    <string name="error_screen_title">Что-то пошло не так</string>
+
+    <string name="decks_screen_title">Мои колоды</string>
+    <string name="add_new_deck">Добавить новую колоду</string>
+    <string name="search">Найти колоду</string>
+    <string name="clear_icon_content_description">Очистить историю</string>
+
+    <string name="learning_percent">%d%%</string>
+    <string name="everything_repeated"> все повторено</string>
+    <string name="words_today">%d сегодня</string>
+    
+    <string name="canсel">Отмена</string>
+    <string name="new_deck">Новая колода</string>
+    <string name="save">Сохранить</string>
+    <string name="new_card">Новая карточка</string>
+    <string name="finish">Готово</string>
+    <string name="choose_the_cover">Выбрать обложку</string>
+    <string name="name">Название</string>
+    <string name="description">Описание</string>
+    <string name="learning_language">Изучаемый язык</string>
+    <string name="translation_language">Язык перевода</string>
+    <string name="new_deck_screen_subtitle">Колоду можно изменить в любой момент</string>
+    <string name="repeat">Повторить</string>
+
+    <string name="start_learning">Учить</string>
+    <string name="all_cards">Всего</string>
+    <string name="cards_today">Сегодня</string>
+    <string name="difficult_cards">Сложных</string>
+
+    <string name="add_card">Добавить карточку</string>
+    <string name="edit_card">Редактировать</string>
+
+    <string name="word_language">Слово • %s</string>
+    <string name="word_translation">Перевод • %s</string>
+    <string name="example">Пример</string>
+    <string name="enter_word">Ввведите слово</string>
+    <string name="enter_translation">Введите перевод</string>
+    <string name="enter_example">Введите пример</string>
+
+    <string name="front_side">Лицевая сторона</string>
+    <string name="back_side">Обратная сторона</string>
+    
+    <string name="profile_screen_title">Профиль</string>
+    <string name="languages">%s • %s</string>
+    <string name="current_series">Текущая серия</string>
+    <plurals name="days">
+        <item quantity="zero">%d дней </item>
+        <item quantity="one">%d день</item>
+        <item quantity="two">%d дня</item>
+        <item quantity="few">%d дня</item>
+        <item quantity="many">%d дней</item>
+        <item quantity="other">%d дней</item>
+    </plurals>
+    <string name="the_best_series">Лучшая серия:</string>
+    <string name="week">Пн Вт Ср Чт Пт Сб Вс</string>
+    <string name="fire_emoji">🔥</string>
+    <string name="hours">%d ч</string>
+    <string name="accuracy">Точность</string>
+    <string name="time">Время</string>
+    <string name="weekly_activity">Активность за неделю</string>
+    <plurals name="daysOf">
+        <item quantity="zero"> • %d дней из 7</item>
+        <item quantity="one"> • %d день из 7</item>
+        <item quantity="two"> • %d дня из 7</item>
+        <item quantity="few"> • %d дня из 7</item>
+        <item quantity="many"> • %d дней из 7</item>
+        <item quantity="other"> • %d дней из 7</item>
+    </plurals>
 </resources>
