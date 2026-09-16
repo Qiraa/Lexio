@@ -94,7 +94,7 @@ fun NavGraph(navController: NavController = rememberNavController()) {
     ) { paddingValues ->
         NavHost(
             navController = navController as NavHostController,
-            startDestination = Screen.Deck.route,
+            startDestination = Screen.Main.route,
             modifier = Modifier.padding(paddingValues)
         ) {
             composable(Screen.Main.route) { MainScreen() }

@@ -16,7 +16,7 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun WordStatsBox(
     modifier: Modifier = Modifier,
-    wordValue: Int,
+    value: String,
     wordText: String,
     valueColor: Color = MaterialTheme.colorScheme.onBackground,
 ) {
@@ -28,7 +28,7 @@ fun WordStatsBox(
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
             Text(
-                text = wordValue.toString(),
+                text = value,
                 fontSize = 25.sp,
                 color = valueColor,
                 fontWeight = FontWeight.Bold,

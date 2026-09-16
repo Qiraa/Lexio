@@ -21,8 +21,6 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextFieldColors
-import androidx.compose.material3.TextFieldDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
@@ -105,13 +103,15 @@ private fun SuccessContent(
                 )
                 FloatingActionButton(
                     onClick = addNewDeck,
-                    modifier = Modifier.size(40.dp),
+                    modifier = Modifier.size(50.dp),
                     shape = RoundedCornerShape(15.dp),
+                    containerColor = MaterialTheme.colorScheme.primary,
                 ) {
                     Icon(
                         imageVector = Icons.Default.Add,
                         contentDescription = stringResource(R.string.add_new_deck),
                         modifier = Modifier.size(25.dp),
+                        tint = MaterialTheme.colorScheme.onPrimary,
                     )
                 }
             }

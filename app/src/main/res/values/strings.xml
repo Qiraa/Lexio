@@ -101,4 +101,31 @@
 
     <string name="front_side">Лицевая сторона</string>
     <string name="back_side">Обратная сторона</string>
+    
+    <string name="profile_screen_title">Профиль</string>
+    <string name="languages">%s • %s</string>
+    <string name="current_series">Текущая серия</string>
+    <plurals name="days">
+        <item quantity="zero">%d дней </item>
+        <item quantity="one">%d день</item>
+        <item quantity="two">%d дня</item>
+        <item quantity="few">%d дня</item>
+        <item quantity="many">%d дней</item>
+        <item quantity="other">%d дней</item>
+    </plurals>
+    <string name="the_best_series">Лучшая серия:</string>
+    <string name="week">Пн Вт Ср Чт Пт Сб Вс</string>
+    <string name="fire_emoji">🔥</string>
+    <string name="hours">%d ч</string>
+    <string name="accuracy">Точность</string>
+    <string name="time">Время</string>
+    <string name="weekly_activity">Активность за неделю</string>
+    <plurals name="daysOf">
+        <item quantity="zero"> • %d дней из 7</item>
+        <item quantity="one"> • %d день из 7</item>
+        <item quantity="two"> • %d дня из 7</item>
+        <item quantity="few"> • %d дня из 7</item>
+        <item quantity="many"> • %d дней из 7</item>
+        <item quantity="other"> • %d дней из 7</item>
+    </plurals>
 </resources>

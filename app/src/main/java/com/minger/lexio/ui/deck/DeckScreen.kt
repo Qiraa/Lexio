@@ -223,16 +223,16 @@ private fun SuccessContent(
                 verticalAlignment = Alignment.CenterVertically,
             ) {
                 WordStatsBox(
-                    wordValue = wordValue,
+                    value = wordValue.toString(),
                     wordText = stringResource(R.string.all_cards)
                 )
                 WordStatsBox(
-                    wordValue = cardValueToday,
+                    value = cardValueToday.toString(),
                     wordText = stringResource(R.string.cards_today),
                     valueColor = MaterialTheme.colorScheme.primary,
                 )
                 WordStatsBox(
-                    wordValue = wordValue,
+                    value = wordValue.toString(),
                     wordText = stringResource(R.string.difficult_cards),
                     valueColor = MaterialTheme.colorScheme.error,
                 )
