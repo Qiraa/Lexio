@@ -75,3 +75,8 @@ internal val DarkInversePrimary = Color(0xFF2556E6)
 internal val DarkSurfaceTint = Color(0xFFBAC3FF)
 internal val DarkShadow = Color(0xFF000000)
 internal val DarkScrim = Color(0xFF000000)
+
+internal val BadResult = Color(0xFFE7424F)
+internal val MiddleResult = Color(0xFFF29227)
+internal val GoodResult = Color(0xFF2556E6)
+internal val BestResult = Color(0xFF229C5D)

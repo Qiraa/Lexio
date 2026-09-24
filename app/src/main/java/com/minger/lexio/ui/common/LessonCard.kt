@@ -1,4 +1,4 @@
-package com.minger.lexio.ui.main
+package com.minger.lexio.ui.common
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -12,11 +12,10 @@ import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.ProgressIndicatorDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.StrokeCap
+import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -26,9 +25,9 @@ import com.minger.lexio.R
 @Composable
 fun LessonCard(
     modifier: Modifier = Modifier,
-    cardValue: String,
-    newCardValue: String,
-    iterationCardValue: String,
+    cardValue: Int,
+    newCardValue: Int,
+    iterationCardValue: Int,
     cardProgress: Float,
     onStartLessonClick: () -> Unit,
 ) {
@@ -50,13 +49,18 @@ fun LessonCard(
                 color = MaterialTheme.colorScheme.surface,
             )
             Text(
-                text = cardValue,
+                text = pluralStringResource(R.plurals.word_cards, cardValue, cardValue),
                 textAlign = TextAlign.Start,
                 fontSize = 34.sp,
                 color = MaterialTheme.colorScheme.surface,
             )
             Text(
-                text = "$newCardValue • $iterationCardValue",
+                text = pluralStringResource(
+                    R.plurals.new_words_card,
+                    newCardValue,
+                    newCardValue,
+                    iterationCardValue
+                ),
                 fontSize = 16.sp,
                 color = MaterialTheme.colorScheme.surface,
             )
